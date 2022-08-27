@@ -40,7 +40,7 @@ pd.set_option('display.width', None)
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
 
 # Veri setinin okutulması
-df = pd.read_csv("/Users/nuri/PycharmProjects/pythonProject/pythonProject_n/dsmlbc_nuri/github/house_price_ml/house_price_prediction.csv")
+df = pd.read_csv("datasets/house_price_prediction.csv")
 
 # Aykırı değerlerin veriden uzaklaştırılması
 df=df.loc[df.SalePrice<=400000,]
